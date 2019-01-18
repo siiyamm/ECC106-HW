@@ -1,0 +1,73 @@
+#include <stdio.h>
+
+#include <stdlib.h>
+
+
+
+int addition(int a,int b){
+
+	return a+b;
+
+}
+
+int subtraction(int a,int b){
+
+	return a-b;
+
+}
+
+int multiplication(int a,int b){
+
+	return a*b;
+
+}
+
+float division(float a,float b){
+
+	return a/b;
+
+}
+
+int main(int argc, char *argv[]) {
+
+	int x,y;
+
+	float result;
+
+	char op;
+
+	printf("Choose your operation\n Addition press 1\n Subtraction press 2\n Multiplication press 3\n Division press 4\n");
+
+	scanf("%c",&op);
+
+	printf("Enter first number\n ");
+
+	scanf("%d",&x);
+
+	printf("Enter second number\n ");
+
+	scanf("%d",&y);
+
+	if(op=='1'){
+
+		result=addition(x,y);
+
+	}else if(op=='2'){
+
+		result=subtraction(x,y);
+
+	}else if(op=='3'){
+
+		result=multiplication(x,y);
+
+	}else if(op=='4'){
+
+		result=division(x,y);
+
+	}
+
+	printf("Answer is:%.2f\n",result);
+
+	return 0;
+
+}

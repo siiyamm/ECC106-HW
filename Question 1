@@ -1,0 +1,25 @@
+int main(int argc, char *argv[]) {
+
+	float start_temperature,end_temperature,step_size,i;
+
+	printf("enter the start temperature and end tempreture in Celcuis \n");
+
+	scanf("%f%f",&start_temperature,&end_temperature);
+
+	printf("Step Size\n");
+
+	scanf("%f",&step_size);
+
+	 i=start_temperature;
+
+	while(i<=end_temperature){
+
+		printf("the temperature %.1f C in F is=\n %.2f\n ",i,((1.8*i)+32));
+
+		i=i+step_size;
+
+	}
+
+	return 0;
+
+}
